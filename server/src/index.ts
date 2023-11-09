@@ -1,5 +1,5 @@
-require('dotenv').config();
-import { pool } from './pool';
+import * as dotenv from 'dotenv';
+dotenv.config({ path: __dirname + '/.env' });
 import http from 'http';
 import { loadFilesSync } from '@graphql-tools/load-files';
 import { makeExecutableSchema } from '@graphql-tools/schema';
